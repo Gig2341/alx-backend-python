@@ -11,6 +11,10 @@ import asyncio
 
 
 async def wait_random(max_delay=10) -> float:
+    '''
+    a function that returns the secs waited to display in decimals
+    '''
+
     randsecs = random.uniform(0, max_delay)
     await asyncio.sleep(randsecs)
     return randsecs
