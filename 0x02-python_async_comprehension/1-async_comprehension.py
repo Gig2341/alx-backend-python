@@ -2,7 +2,7 @@
 
 '''
 this module imports async_generator from the previous task and then write a
-coroutine called async_comprehension that takes no arguments. The coroutine 
+coroutine called async_comprehension that takes no arguments. The coroutine
 collects 10 random numbers using an async comprehensing over async_generator,
 then return the 10 random numbers.
 '''
@@ -18,4 +18,3 @@ async def async_comprehension() -> List[float]:
     """Return the 10 random numbers"""
     results = [i async for i in async_generator()]
     return results
-    
